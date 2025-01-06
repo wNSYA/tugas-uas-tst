@@ -1,0 +1,1238 @@
+INFO - 2025-01-06 15:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 15:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 15:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 15:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 15:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 15:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 15:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 15:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 15:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 15:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 15:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 15:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 15:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 15:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 15:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-06 16:12:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "landing.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('landing.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('landing', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('landing')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+INFO - 2025-01-06 16:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 16:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 16:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-06 16:24:02 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: character varying = record
+LINE 3: WHERE &quot;email&quot; = ('mambo@mambo.mambo','mambo')
+                      ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\Auth.php(33): CodeIgniter\BaseModel->first()
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#15 {main}
+CRITICAL - 2025-01-06 16:24:02 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  operator does not exist: character varying = record
+LINE 3: WHERE &quot;email&quot; = ('mambo@mambo.mambo','mambo')
+                      ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Auth.php(33): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 16:24:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  operator does not exist: character varying = record
+LINE 3: WHERE &quot;email&quot; = ('mambo@mambo.mambo','mambo')
+                      ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "users"
+WHERE "email" = (\'mambo@mambo.mambo\',\'mambo\')
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "users"
+WHERE "email" = (\'mambo@mambo.mambo\',\'mambo\')
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Auth.php(33): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 16:24:02 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: character varying = record
+LINE 3: WHERE &quot;email&quot; = ('mambo@mambo.mambo','mambo')
+                      ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  operator does not exist: character varying = record
+LINE 3: WHERE &quot;email&quot; = (\'mambo@mambo.mambo\',\'mambo\')
+                      ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT *
+FROM "users"
+WHERE "email" = (\'mambo@mambo.mambo\',\'mambo\')
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "users"
+WHERE "email" = (\'mambo@mambo.mambo\',\'mambo\')
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "users"
+WHERE "email" = (\'mambo@mambo.mambo\',\'mambo\')
+ LIMIT 1')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\Auth.php(33): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+INFO - 2025-01-06 16:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-06 16:46:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "login.php"
+[Method: GET, Route: login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\Auth.php(15): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->loginView()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+INFO - 2025-01-06 16:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 17:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 17:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 17:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 17:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-06 17:28:54 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists. in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(52): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-06 17:28:54 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:28:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$yWnIahGDhNC9i7zfqnYRoO9xmFSoVggIyLUpmShcCEHo80VB9Ry0m\', \'User\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$yWnIahGDhNC9i7zfqnYRoO9xmFSoVggIyLUpmShcCEHo80VB9Ry0m\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:28:54 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$yWnIahGDhNC9i7zfqnYRoO9xmFSoVggIyLUpmShcCEHo80VB9Ry0m\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$yWnIahGDhNC9i7zfqnYRoO9xmFSoVggIyLUpmShcCEHo80VB9Ry0m\', \'User\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$yWnIahGDhNC9i7zfqnYRoO9xmFSoVggIyLUpmShcCEHo80VB9Ry0m\', \'User\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 6 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-06 17:28:55 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists. in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(52): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-06 17:28:55 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:28:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$l4WXQH/NwC5ZQVFn9NTLpOReQPmTJs.MUkZYL/Fa8.VU88CqUXzA6\', \'User\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$l4WXQH/NwC5ZQVFn9NTLpOReQPmTJs.MUkZYL/Fa8.VU88CqUXzA6\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:28:55 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$l4WXQH/NwC5ZQVFn9NTLpOReQPmTJs.MUkZYL/Fa8.VU88CqUXzA6\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$l4WXQH/NwC5ZQVFn9NTLpOReQPmTJs.MUkZYL/Fa8.VU88CqUXzA6\', \'User\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$l4WXQH/NwC5ZQVFn9NTLpOReQPmTJs.MUkZYL/Fa8.VU88CqUXzA6\', \'User\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 6 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-06 17:28:55 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists. in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(52): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-06 17:28:55 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:28:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$wqpPcE8DegmOMiaEQypPI.XG9uGoqsnRwa0wHsZ1kZo8Y0XfuCeOW\', \'User\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$wqpPcE8DegmOMiaEQypPI.XG9uGoqsnRwa0wHsZ1kZo8Y0XfuCeOW\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:28:55 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$wqpPcE8DegmOMiaEQypPI.XG9uGoqsnRwa0wHsZ1kZo8Y0XfuCeOW\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$wqpPcE8DegmOMiaEQypPI.XG9uGoqsnRwa0wHsZ1kZo8Y0XfuCeOW\', \'User\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$wqpPcE8DegmOMiaEQypPI.XG9uGoqsnRwa0wHsZ1kZo8Y0XfuCeOW\', \'User\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 6 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-06 17:31:06 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists. in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(52): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-06 17:31:06 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:31:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$Fv0VX9q57.9SIjSNxmUxH.67OXCNZZLVrZfRLVbwLEZwZWqLDoWG2\', \'User\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$Fv0VX9q57.9SIjSNxmUxH.67OXCNZZLVrZfRLVbwLEZwZWqLDoWG2\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:31:06 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$Fv0VX9q57.9SIjSNxmUxH.67OXCNZZLVrZfRLVbwLEZwZWqLDoWG2\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$Fv0VX9q57.9SIjSNxmUxH.67OXCNZZLVrZfRLVbwLEZwZWqLDoWG2\', \'User\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$Fv0VX9q57.9SIjSNxmUxH.67OXCNZZLVrZfRLVbwLEZwZWqLDoWG2\', \'User\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 6 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-06 17:31:08 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists. in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(52): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-06 17:31:08 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:31:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$jPVytdQhFQDBFrwfptloUuat7KZugdAZ0TxHsxMrkeIZMRTFuqUGy\', \'User\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$jPVytdQhFQDBFrwfptloUuat7KZugdAZ0TxHsxMrkeIZMRTFuqUGy\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:31:08 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$jPVytdQhFQDBFrwfptloUuat7KZugdAZ0TxHsxMrkeIZMRTFuqUGy\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$jPVytdQhFQDBFrwfptloUuat7KZugdAZ0TxHsxMrkeIZMRTFuqUGy\', \'User\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$jPVytdQhFQDBFrwfptloUuat7KZugdAZ0TxHsxMrkeIZMRTFuqUGy\', \'User\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 6 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-06 17:31:08 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists. in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(52): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-06 17:31:08 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:31:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$R2eonLYTgzugucx1kgugy.KRD0DxiBEzzFNAFFahHWdRYjSTmnVdq\', \'User\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$R2eonLYTgzugucx1kgugy.KRD0DxiBEzzFNAFFahHWdRYjSTmnVdq\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:31:08 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$R2eonLYTgzugucx1kgugy.KRD0DxiBEzzFNAFFahHWdRYjSTmnVdq\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$R2eonLYTgzugucx1kgugy.KRD0DxiBEzzFNAFFahHWdRYjSTmnVdq\', \'User\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$R2eonLYTgzugucx1kgugy.KRD0DxiBEzzFNAFFahHWdRYjSTmnVdq\', \'User\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 6 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-06 17:31:08 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists. in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(52): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-06 17:31:08 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:31:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$7RS5YS31Y/h8aeOHmSkxYuHTpJQg1VD2q8OnQMVPMA6khlyZFpg5e\', \'User\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$7RS5YS31Y/h8aeOHmSkxYuHTpJQg1VD2q8OnQMVPMA6khlyZFpg5e\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:31:08 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$7RS5YS31Y/h8aeOHmSkxYuHTpJQg1VD2q8OnQMVPMA6khlyZFpg5e\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$7RS5YS31Y/h8aeOHmSkxYuHTpJQg1VD2q8OnQMVPMA6khlyZFpg5e\', \'User\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$7RS5YS31Y/h8aeOHmSkxYuHTpJQg1VD2q8OnQMVPMA6khlyZFpg5e\', \'User\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 6 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-06 17:31:09 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists. in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(52): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-06 17:31:09 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:31:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$tqPWLyZv7.JZWmSqFDH3o.JMmGf4LHf85SbUT/r10ks99Y2O0aFx.\', \'User\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$tqPWLyZv7.JZWmSqFDH3o.JMmGf4LHf85SbUT/r10ks99Y2O0aFx.\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:31:09 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$tqPWLyZv7.JZWmSqFDH3o.JMmGf4LHf85SbUT/r10ks99Y2O0aFx.\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$tqPWLyZv7.JZWmSqFDH3o.JMmGf4LHf85SbUT/r10ks99Y2O0aFx.\', \'User\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$tqPWLyZv7.JZWmSqFDH3o.JMmGf4LHf85SbUT/r10ks99Y2O0aFx.\', \'User\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 6 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-06 17:31:09 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists. in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(52): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-06 17:31:09 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:31:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$.cg446AMIr99d/s0IoLByOjSrw1MFJv67XAWTWiE5HsMm7MKsJ19O\', \'User\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$.cg446AMIr99d/s0IoLByOjSrw1MFJv67XAWTWiE5HsMm7MKsJ19O\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:31:09 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$.cg446AMIr99d/s0IoLByOjSrw1MFJv67XAWTWiE5HsMm7MKsJ19O\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$.cg446AMIr99d/s0IoLByOjSrw1MFJv67XAWTWiE5HsMm7MKsJ19O\', \'User\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$.cg446AMIr99d/s0IoLByOjSrw1MFJv67XAWTWiE5HsMm7MKsJ19O\', \'User\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 6 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-06 17:34:30 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists. in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(52): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-06 17:34:30 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:34:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$taNBV0a/8Uh3EfxnbjKuv.Bkj3iKMuZKZzAtKsf6gmXnOH68ACe92\', \'User\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$taNBV0a/8Uh3EfxnbjKuv.Bkj3iKMuZKZzAtKsf6gmXnOH68ACe92\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:34:30 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo2) already exists.', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$taNBV0a/8Uh3EfxnbjKuv.Bkj3iKMuZKZzAtKsf6gmXnOH68ACe92\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$taNBV0a/8Uh3EfxnbjKuv.Bkj3iKMuZKZzAtKsf6gmXnOH68ACe92\', \'User\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo2\', \'mambo2@mambo.mambo\', \'$2y$10$taNBV0a/8Uh3EfxnbjKuv.Bkj3iKMuZKZzAtKsf6gmXnOH68ACe92\', \'User\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 6 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-06 17:35:07 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists. in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(52): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-06 17:35:07 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists.
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:35:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$8OJMBwhNl0IdMcNqf6tmSOV0O0HJRHAdqZg7aMerdrFpOyQRVDSFu\', \'User\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$8OJMBwhNl0IdMcNqf6tmSOV0O0HJRHAdqZg7aMerdrFpOyQRVDSFu\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:35:07 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists.', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$8OJMBwhNl0IdMcNqf6tmSOV0O0HJRHAdqZg7aMerdrFpOyQRVDSFu\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$8OJMBwhNl0IdMcNqf6tmSOV0O0HJRHAdqZg7aMerdrFpOyQRVDSFu\', \'User\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$8OJMBwhNl0IdMcNqf6tmSOV0O0HJRHAdqZg7aMerdrFpOyQRVDSFu\', \'User\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 6 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-06 17:35:08 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists. in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(52): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-06 17:35:08 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists.
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:35:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$6uKsXYMXP16ZWJ..NIwDyugvjetWfapGJZaHIuog5pWF6wLUq222a\', \'User\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$6uKsXYMXP16ZWJ..NIwDyugvjetWfapGJZaHIuog5pWF6wLUq222a\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:35:08 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists.', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$6uKsXYMXP16ZWJ..NIwDyugvjetWfapGJZaHIuog5pWF6wLUq222a\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$6uKsXYMXP16ZWJ..NIwDyugvjetWfapGJZaHIuog5pWF6wLUq222a\', \'User\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$6uKsXYMXP16ZWJ..NIwDyugvjetWfapGJZaHIuog5pWF6wLUq222a\', \'User\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 6 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-06 17:35:08 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists. in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(52): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-06 17:35:08 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists.
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:35:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$D0SZgRmBvGgB2TIsl3RBzuGm3851l/Bheq0/h7h9rpdtXz6Hhl.LC\', \'User\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$D0SZgRmBvGgB2TIsl3RBzuGm3851l/Bheq0/h7h9rpdtXz6Hhl.LC\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:35:08 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists.', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$D0SZgRmBvGgB2TIsl3RBzuGm3851l/Bheq0/h7h9rpdtXz6Hhl.LC\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$D0SZgRmBvGgB2TIsl3RBzuGm3851l/Bheq0/h7h9rpdtXz6Hhl.LC\', \'User\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$D0SZgRmBvGgB2TIsl3RBzuGm3851l/Bheq0/h7h9rpdtXz6Hhl.LC\', \'User\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 6 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-06 17:35:08 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists. in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(52): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-06 17:35:08 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists.
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:35:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$znexTIn9CypL6y5rokxNvebLJy9CNRETWKb1ySfY3lOgAdyvu3fnC\', \'User\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$znexTIn9CypL6y5rokxNvebLJy9CNRETWKb1ySfY3lOgAdyvu3fnC\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-06 17:35:08 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;users_username_key&quot;
+DETAIL:  Key (username)=(mambo3) already exists.', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$znexTIn9CypL6y5rokxNvebLJy9CNRETWKb1ySfY3lOgAdyvu3fnC\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$znexTIn9CypL6y5rokxNvebLJy9CNRETWKb1ySfY3lOgAdyvu3fnC\', \'User\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mambo3\', \'mambo3@mambo.mambo\', \'$2y$10$znexTIn9CypL6y5rokxNvebLJy9CNRETWKb1ySfY3lOgAdyvu3fnC\', \'User\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 6 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\UserController.php(52): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+INFO - 2025-01-06 17:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 17:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 17:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 17:43:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 17:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 17:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-06 17:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
