@@ -30,5 +30,11 @@ $routes->get('/quiz/(:num)', 'QuizController::getQuizDetails/$1');
 $routes->get('/quiz/start/(:num)', 'QuizController::startQuiz/$1');
 $routes->post('/quiz/submit', 'QuizController::submitQuiz');
 
+// app/Config/Routes.php
+$routes->get('quiz/list', 'QuizController::listQuiz');
+
+$routes->post('/quiz/answer', 'QuizController::answerQuiz');
+
+
 // // API route for quiz
 // $routes->get('/api/quiz/(:num)', 'QuizController::getQuizById/$1');
