@@ -69,102 +69,74 @@ class UserController extends Controller
         return view('auth/login');  // Return the login form view
     }
 
-    // Attempt to login (POST request)
     public function loginAttempt()
     {
-        $data = $this->request->getJSON(true);  // Get JSON request data
-
-        if (!$data) {
-            // If no JSON data was sent, fall back to form data
-            $data = [
-                'email' => $this->request->getPost('email'),
-                'password' => $this->request->getPost('password'),
-            ];
-        }
-
+        // Determine if the request is an API or a web request
+        $isApiRequest = $this->request->isAJAX() || $this->request->getHeaderLine('Content-Type') === 'application/json';
+    
+        $data = $isApiRequest ? $this->request->getJSON(true) : $this->request->getPost();
+    
         // Validate the input data
         if (!isset($data['email'], $data['password'])) {
-            return $this->response->setStatusCode(400)->setJSON(['error' => 'Email or password missing']);
+            if ($isApiRequest) {
+                return $this->response->setStatusCode(400)->setJSON(['error' => 'Email or password missing']);
+            } else {
+                return redirect()->back()->with('error', 'Email or password missing');
+            }
         }
-
+    
         $userModel = new UserModel();
         $email = $data['email'];
         $password = $data['password'];
-
+    
         // Check if the user exists
         $user = $userModel->where('email', $email)->first();
-
+    
         if ($user && password_verify($password, $user['password'])) {
-            // Set session data for logged in user
-            session()->set([
-                'user' => [
-                    'id' => $user['id'],
-                    'username' => $user['username'],
-                ],
-                'isLoggedIn' => true,
-            ]);
-
-            // Return success response for API requests
-            return $this->response->setStatusCode(200)->setJSON([
-                'message' => 'Login successful',
-                'user' => ['id' => $user['id'], 'username' => $user['username']],
-            ]);
+            // Generate a token for API clients
+            $secretKey = 'your-secret-key';  // Replace with a strong, secure key
+            $tokenPayload = [
+                'id' => $user['id'],
+                'email' => $user['email'],
+                'username' => $user['username'],
+                'timestamp' => time(),  // Timestamp for token generation
+            ];
+            $token = base64_encode(json_encode($tokenPayload)) . '.' . hash_hmac('sha256', json_encode($tokenPayload), $secretKey);
+    
+            if ($isApiRequest) {
+                // Return the token for API clients
+                return $this->response->setStatusCode(200)->setJSON([
+                    'message' => 'Login successful',
+                    'token' => $token,
+                    'user' => ['id' => $user['id'], 'username' => $user['username']],
+                ]);
+            } else {
+                // Set session data for web clients
+                session()->set([
+                    'user' => [
+                        'id' => $user['id'],
+                        'username' => $user['username'],
+                    ],
+                    'isLoggedIn' => true,
+                ]);
+    
+                return redirect()->to('/dashboard');
+            }
         } else {
-            // Return error response for API requests
-            return $this->response->setStatusCode(401)->setJSON(['error' => 'Invalid email or password']);
+            if ($isApiRequest) {
+                return $this->response->setStatusCode(401)->setJSON(['error' => 'Invalid email or password']);
+            } else {
+                return redirect()->back()->with('error', 'Invalid email or password');
+            }
         }
     }
+    
+    
 
-    // // Logout user (Clear session)
-    // public function logout()
-    // {
-    //     session()->destroy();
-    //     return $this->response->setStatusCode(200)->setJSON(['message' => 'Successfully logged out']);
-    // }
-
-    // // Display user profile (HTML form)
-    // public function profile()
-    // {
-    //     $userModel = new UserModel();
-    //     $profileModel = new ProfileModel();
-
-    //     $user_id = session()->get('user_id');
-    //     $user = $userModel->find($user_id);
-    //     $profile = $profileModel->where('user_id', $user_id)->first();
-
-    //     // Return profile in JSON format
-    //     return $this->response->setStatusCode(200)->setJSON([
-    //         'user' => $user,
-    //         'profile' => $profile
-    //     ]);
-    // }
-
-    // // Update user profile (POST)
-    // public function updateProfile()
-    // {
-    //     $profileModel = new ProfileModel();
-
-    //     $user_id = session()->get('user_id');
-    //     $data = $this->request->getJSON(true);  // Get JSON request data
-
-    //     if (!isset($data['full_name'], $data['bio'])) {
-    //         return $this->response->setStatusCode(400)->setJSON(['error' => 'Missing required fields']);
-    //     }
-
-    //     $profileData = [
-    //         'full_name' => $data['full_name'],
-    //         'bio' => $data['bio']
-    //     ];
-
-    //     // Check if the profile exists
-    //     $profile = $profileModel->where('user_id', $user_id)->first();
-    //     if ($profile) {
-    //         $profileModel->update($profile['id'], $profileData);
-    //     } else {
-    //         $profileData['user_id'] = $user_id;
-    //         $profileModel->save($profileData);
-    //     }
-
-    //     return $this->response->setStatusCode(200)->setJSON(['message' => 'Profile updated successfully']);
-    // }
+    // Logout user (Clear session)
+    public function logout()
+    {
+        session()->destroy();
+        return $this->response->setStatusCode(200)->setJSON(['message' => 'Successfully logged out']);
+    }
 }

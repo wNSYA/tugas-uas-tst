@@ -11,7 +11,7 @@ class DashboardController extends Controller
     {
         // Periksa apakah pengguna sudah login
         if (!session()->get('isLoggedIn')) {
-            return redirect()->to('/login');
+            return redirect()->to('/user/login');
         }
 
         // Ambil data kuis dari database
