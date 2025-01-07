@@ -26,8 +26,9 @@ $routes->group('user', function($routes) {
 
 // Quiz Routes
 $routes->get('/dashboard', 'DashboardController::index');       // Display list of quizzes
+$routes->get('/quiz/(:num)', 'QuizController::getQuizDetails/$1');
 $routes->get('/quiz/start/(:num)', 'QuizController::startQuiz/$1');
 $routes->post('/quiz/submit', 'QuizController::submitQuiz');
 
-// API route for quiz
-$routes->get('/api/quiz/(:num)', 'QuizController::getQuizById/$1');
+// // API route for quiz
+// $routes->get('/api/quiz/(:num)', 'QuizController::getQuizById/$1');

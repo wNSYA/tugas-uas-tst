@@ -93,29 +93,32 @@ class UserController extends Controller
         $user = $userModel->where('email', $email)->first();
     
         if ($user && password_verify($password, $user['password'])) {
-            // Generate a token for API clients
-            $secretKey = 'your-secret-key';  // Replace with a strong, secure key
-            $tokenPayload = [
-                'id' => $user['id'],
-                'email' => $user['email'],
-                'username' => $user['username'],
-                'timestamp' => time(),  // Timestamp for token generation
-            ];
-            $token = base64_encode(json_encode($tokenPayload)) . '.' . hash_hmac('sha256', json_encode($tokenPayload), $secretKey);
+            // Define tokens for Admin and User
+            $adminToken = "TIRHRRADah7zNjQaNLFTFC5AUelExF_C-D8BO2egzYGwmuX2nPaED-U1h1sgkiJFWaDsIUGblvxIAjqhD1ZO-Q"; // Admin Token
+            $userToken = "urhiC4D9TQoao9P583pTmFNmSA5Vdv-Nh6XuY3d98DJd0i1e4r-vbx25F9QdY_U-Oyu7TYkeiMZoqpjQ3ws4xA";
     
             if ($isApiRequest) {
-                // Return the token for API clients
-                return $this->response->setStatusCode(200)->setJSON([
-                    'message' => 'Login successful',
-                    'token' => $token,
-                    'user' => ['id' => $user['id'], 'username' => $user['username']],
-                ]);
+                // Check user role and assign appropriate token
+                if ($user['role'] === 'Admin') {
+                    return $this->response->setStatusCode(200)->setJSON([
+                        'message' => 'Login successful',
+                        'token' => $adminToken,
+                        'user' => ['id' => $user['id'], 'username' => $user['username'], 'role' => $user['role']],
+                    ]);
+                } else {
+                    return $this->response->setStatusCode(200)->setJSON([
+                        'message' => 'Login successful',
+                        'token' => $userToken, // Send the user token
+                        'user' => ['id' => $user['id'], 'username' => $user['username'], 'role' => $user['role']],
+                    ]);
+                }
             } else {
                 // Set session data for web clients
                 session()->set([
                     'user' => [
                         'id' => $user['id'],
                         'username' => $user['username'],
+                        'role' => $user['role'],  // Store the user role
                     ],
                     'isLoggedIn' => true,
                 ]);
@@ -129,7 +132,8 @@ class UserController extends Controller
                 return redirect()->back()->with('error', 'Invalid email or password');
             }
         }
-    }
+    }    
+    
     
     
 
