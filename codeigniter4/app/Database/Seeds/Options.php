@@ -28,8 +28,8 @@ class Options extends Seeder
             ['question_id' => 3, 'option_text' => '-7', 'is_correct' => false],
 
             // Question 4
-            ['question_id' => 4, 'option_text' => 'x = 7', 'is_correct' => false],
-            ['question_id' => 4, 'option_text' => 'x = 6', 'is_correct' => true],
+            ['question_id' => 4, 'option_text' => 'x = 7', 'is_correct' => true],
+            ['question_id' => 4, 'option_text' => 'x = 6', 'is_correct' => false],
             ['question_id' => 4, 'option_text' => 'x = 5', 'is_correct' => false],
             ['question_id' => 4, 'option_text' => 'x = 3', 'is_correct' => false],
 

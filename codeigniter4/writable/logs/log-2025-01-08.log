@@ -93,3 +93,7 @@ Stack trace:
 #12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
 #13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
 #14 {main}
+INFO - 2025-01-08 09:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-08 09:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-08 09:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-08 09:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
