@@ -9,50 +9,40 @@ use CodeIgniter\RESTful\ResourceController;
 
 class QuizController extends ResourceController
 {
+    private function validateToken()
+    {
+    $token = getBearerToken();
+    if (!$token) {
+        return $this->response->setStatusCode(401)->setJSON(['error' => 'Token not provided']);
+    }
+
+    $decoded = validateJWT($token, env('JWT_SECRET'));
+    if (!$decoded) {
+        return $this->response->setStatusCode(401)->setJSON(['error' => 'Invalid token']);
+    }
+
+    return $decoded; // Return decoded token for further use
+    }
     // Method untuk mengambil daftar quiz
     public function listQuiz()
     {
-        // Check if the Authorization header has the correct token
-        $authHeader = $this->request->getHeaderLine('Authorization');
-        $adminToken = 'Bearer TIRHRRADah7zNjQaNLFTFC5AUelExF_C-D8BO2egzYGwmuX2nPaED-U1h1sgkiJFWaDsIUGblvxIAjqhD1ZO-Q';  // Admin Token
-        $userToken = 'Bearer urhiC4D9TQoao9P583pTmFNmSA5Vdv-Nh6XuY3d98DJd0i1e4r-vbx25F9QdY_U-Oyu7TYkeiMZoqpjQ3ws4xA';
+        $decoded = $this->validateToken();
+        if (!$decoded) return;
     
-        if ($authHeader !== $adminToken && $authHeader !== $userToken) {
-            return $this->response->setStatusCode(401)->setJSON(['error' => 'Invalid token']);
-        }
-                // Check if the Authorization header has the correct token
-        $authHeader = $this->request->getHeaderLine('Authorization');
-        $adminToken = 'Bearer TIRHRRADah7zNjQaNLFTFC5AUelExF_C-D8BO2egzYGwmuX2nPaED-U1h1sgkiJFWaDsIUGblvxIAjqhD1ZO-Q';  // Admin Token
-        $userToken = 'Bearer urhiC4D9TQoao9P583pTmFNmSA5Vdv-Nh6XuY3d98DJd0i1e4r-vbx25F9QdY_U-Oyu7TYkeiMZoqpjQ3ws4xA';
-    
-        if ($authHeader !== $adminToken && $authHeader !== $userToken) {
-            return $this->response->setStatusCode(401)->setJSON(['error' => 'Invalid token']);
-        }
-        // Membuat instance dari QuizModel
         $quizModel = new QuizModel();
-        
-        // Mengambil semua quiz yang tersedia
         $quizzes = $quizModel->findAll();
-        
-        // Jika tidak ada quiz, beri respons 404
+    
         if (empty($quizzes)) {
-            return $this->respond(['error' => 'No quizzes found'], 404);
+            return $this->response->setStatusCode(404)->setJSON(['error' => 'No quizzes found']);
         }
-        
-        // Mengembalikan daftar quiz dalam format JSON
+    
         return $this->respond($quizzes);
     }
 
     public function getQuizDetails($quizId) 
     {
-        // Check if the Authorization header has the correct token
-        $authHeader = $this->request->getHeaderLine('Authorization');
-        $adminToken = 'Bearer TIRHRRADah7zNjQaNLFTFC5AUelExF_C-D8BO2egzYGwmuX2nPaED-U1h1sgkiJFWaDsIUGblvxIAjqhD1ZO-Q';  // Admin Token
-        $userToken = 'Bearer urhiC4D9TQoao9P583pTmFNmSA5Vdv-Nh6XuY3d98DJd0i1e4r-vbx25F9QdY_U-Oyu7TYkeiMZoqpjQ3ws4xA';
-    
-        if ($authHeader !== $adminToken && $authHeader !== $userToken) {
-            return $this->response->setStatusCode(401)->setJSON(['error' => 'Invalid token']);
-        }
+        $decoded = $this->validateToken();
+        if (!$decoded) return;
     
         // If the token is valid, retrieve quiz data
         $db = \Config\Database::connect();
@@ -75,7 +65,7 @@ class QuizController extends ResourceController
             // Process each question and its options
             foreach ($questions as &$question) {
                 // Select different fields based on token type
-                if ($authHeader === $adminToken) {
+                if ($decoded->role == 'Admin') {
                     $optionsQuery = $db->table('options')
                         ->select('option_text, is_correct')
                         ->where('question_id', $question['id']);
@@ -113,88 +103,87 @@ class QuizController extends ResourceController
         return $this->response->setStatusCode(404)->setJSON(['error' => 'Quiz not found']);
     }
 
-    public function startQuiz($quizId)
-    {
-        $quizModel = new QuizModel();
-        $questionModel = new QuestionModel();
-        $optionModel = new OptionModel();
+    // public function startQuiz($quizId)
+    // {
+    //     $quizModel = new QuizModel();
+    //     $questionModel = new QuestionModel();
+    //     $optionModel = new OptionModel();
     
-        // Fetch the quiz data
-        $quiz = $quizModel->find($quizId);
-        if (!$quiz) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Quiz not found');
-        }
+    //     // Fetch the quiz data
+    //     $quiz = $quizModel->find($quizId);
+    //     if (!$quiz) {
+    //         throw new \CodeIgniter\Exceptions\PageNotFoundException('Quiz not found');
+    //     }
     
-        // Fetch the related questions and options for the quiz
-        $questions = $questionModel->where('quiz_id', $quizId)->findAll();
-        foreach ($questions as &$question) {
-            $question['options'] = $optionModel->where('question_id', $question['id'])->findAll();
-        }
+    //     // Fetch the related questions and options for the quiz
+    //     $questions = $questionModel->where('quiz_id', $quizId)->findAll();
+    //     foreach ($questions as &$question) {
+    //         $question['options'] = $optionModel->where('question_id', $question['id'])->findAll();
+    //     }
     
-        return view('quiz/start', [
-            'quiz' => $quiz,
-            'questions' => $questions,
-        ]);
-    }
+    //     return view('quiz/start', [
+    //         'quiz' => $quiz,
+    //         'questions' => $questions,
+    //     ]);
+    // }
 
 
-    public function submitQuiz()
-    {
-        $quizId = $this->request->getPost('quiz_id');
-        $userId = session()->get('user_id'); // Get the logged-in user ID
-        $answers = $this->request->getPost('answers'); // Answers from the form
+    // public function submitQuiz()
+    // {
+    //     $quizId = $this->request->getPost('quiz_id');
+    //     $userId = session()->get('user_id'); // Get the logged-in user ID
+    //     $answers = $this->request->getPost('answers'); // Answers from the form
     
-        if (empty($answers) || empty($quizId)) {
-            return redirect()->to('/dashboard')->with('error', 'No answers provided or invalid quiz');
-        }
+    //     if (empty($answers) || empty($quizId)) {
+    //         return redirect()->to('/dashboard')->with('error', 'No answers provided or invalid quiz');
+    //     }
     
-        // Fetch quiz and questions
-        $quizModel = new QuizModel();
-        $questionModel = new QuestionModel();
-        $optionModel = new OptionModel();
+    //     // Fetch quiz and questions
+    //     $quizModel = new QuizModel();
+    //     $questionModel = new QuestionModel();
+    //     $optionModel = new OptionModel();
     
-        // Calculate score
-        $score = 0;
-        $correctAnswers = [];
+    //     // Calculate score
+    //     $score = 0;
+    //     $correctAnswers = [];
     
-        foreach ($answers as $questionId => $selectedOptionId) {
-            $question = $questionModel->find($questionId);
-            $correctOption = $optionModel->where('question_id', $questionId)
-                                         ->where('is_correct', true)
-                                         ->first();
+    //     foreach ($answers as $questionId => $selectedOptionId) {
+    //         $question = $questionModel->find($questionId);
+    //         $correctOption = $optionModel->where('question_id', $questionId)
+    //                                      ->where('is_correct', true)
+    //                                      ->first();
     
-            // Check if the answer is correct
-            if ($selectedOptionId == $correctOption['id']) {
-                $score++;
-            }
+    //         // Check if the answer is correct
+    //         if ($selectedOptionId == $correctOption['id']) {
+    //             $score++;
+    //         }
     
-            // Collect answers for showing result
-            $correctAnswers[$questionId] = [
-                'selected_option_id' => $selectedOptionId,
-                'correct_option_id' => $correctOption['id'],
-            ];
-        }
+    //         // Collect answers for showing result
+    //         $correctAnswers[$questionId] = [
+    //             'selected_option_id' => $selectedOptionId,
+    //             'correct_option_id' => $correctOption['id'],
+    //         ];
+    //     }
     
-        // Return a result view showing the score and answers
-        return view('quiz/quiz_result', [
-            'score' => $score,
-            'totalQuestions' => count($answers),
-            'quizTitle' => $quizModel->find($quizId)['title'],
-            'correctAnswers' => $correctAnswers,
-        ]);
-    }
+    //     // Return a result view showing the score and answers
+    //     return view('quiz/quiz_result', [
+    //         'score' => $score,
+    //         'totalQuestions' => count($answers),
+    //         'quizTitle' => $quizModel->find($quizId)['title'],
+    //         'correctAnswers' => $correctAnswers,
+    //     ]);
+    // }
     
     public function answerQuiz()
     {
-        // Cek apakah Authorization header memiliki token yang benar
-        $authHeader = $this->request->getHeaderLine('Authorization');
-        $adminToken = 'Bearer TIRHRRADah7zNjQaNLFTFC5AUelExF_C-D8BO2egzYGwmuX2nPaED-U1h1sgkiJFWaDsIUGblvxIAjqhD1ZO-Q';  // Admin Token
-        $userToken = 'Bearer urhiC4D9TQoao9P583pTmFNmSA5Vdv-Nh6XuY3d98DJd0i1e4r-vbx25F9QdY_U-Oyu7TYkeiMZoqpjQ3ws4xA'; // User Token
-    
+        $decoded = $this->validateToken();
+        if (!$decoded) return;
+
         // Validasi token
-        if ($authHeader !== $adminToken && $authHeader !== $userToken) {
-            return $this->response->setStatusCode(401)->setJSON(['error' => 'Invalid token']);
+        if ($decoded->role !== 'Admin') {
+            return $this->response->setStatusCode(403)->setJSON(['error' => 'Access denied']);
         }
+
     
         // Ambil data JSON dari request body
         $data = $this->request->getJSON(true);

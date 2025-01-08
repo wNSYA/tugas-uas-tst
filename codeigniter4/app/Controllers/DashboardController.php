@@ -7,20 +7,31 @@ use CodeIgniter\Controller;
 
 class DashboardController extends Controller
 {
+    private function validateToken()
+{
+    $token = getBearerToken();
+    if (!$token) {
+        return $this->response->setStatusCode(401)->setJSON(['error' => 'Token not provided']);
+    }
+
+    $decoded = validateJWT($token, env('JWT_SECRET'));
+    if (!$decoded) {
+        return $this->response->setStatusCode(401)->setJSON(['error' => 'Invalid token']);
+    }
+
+    return $decoded; // Return decoded token for further use
+}
     public function index()
     {
-        // Periksa apakah pengguna sudah login
-        if (!session()->get('isLoggedIn')) {
-            return redirect()->to('/user/login');
-        }
-
-        // Ambil data kuis dari database
+        $decoded = $this->validateToken();
+        if (!$decoded) return;
+    
         $quizModel = new QuizModel();
         $quizzes = $quizModel->findAll();
-
-        // Kirim data kuis ke view
-        return view('dashboard', ['quizzes' => $quizzes]);
+    
+        return view('dashboard', ['quizzes' => $quizzes, 'user' => $decoded]);
     }
+    
 
     public function logout()
     {
