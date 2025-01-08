@@ -1,0 +1,95 @@
+ERROR - 2025-01-08 07:42:59 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type timestamp: "CURRENT_TIMESTAMP"
+LINE 5:  "created_at" TIMESTAMP DEFAULT 'CURRENT_TIMESTAMP' NOT NULL...
+                                        ^ in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'CREATE TABLE "q...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('CREATE TABLE "q...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE "q...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE "q...')
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Database\Migrations\2025-01-08-070401_Quizzes.php(33): CodeIgniter\Database\Forge->createTable('quizzes')
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\MigrationRunner.php(867): App\Database\Migrations\Quizzes->up()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-01-08 07:45:53 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type timestamp: "CURRENT_TIMESTAMP"
+LINE 5:  "created_at" TIMESTAMP DEFAULT 'CURRENT_TIMESTAMP' NOT NULL...
+                                        ^ in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'CREATE TABLE "q...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('CREATE TABLE "q...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE "q...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE "q...')
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Database\Migrations\2025-01-08-070401_Quizzes.php(33): CodeIgniter\Database\Forge->createTable('quizzes')
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\MigrationRunner.php(867): App\Database\Migrations\Quizzes->up()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-01-08 07:47:47 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type timestamp: "CURRENT_TIMESTAMP"
+LINE 5:  "created_at" TIMESTAMP DEFAULT 'CURRENT_TIMESTAMP' NOT NULL...
+                                        ^ in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'CREATE TABLE "q...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('CREATE TABLE "q...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE "q...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE "q...')
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Database\Migrations\2025-01-08-070401_Quizzes.php(34): CodeIgniter\Database\Forge->createTable('quizzes')
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\MigrationRunner.php(867): App\Database\Migrations\Quizzes->up()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-01-08 07:52:44 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near "ON"
+LINE 5:  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CU...
+                                                        ^ in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'CREATE TABLE "q...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('CREATE TABLE "q...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE "q...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE "q...')
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Database\Migrations\2025-01-08-070401_Quizzes.php(30): CodeIgniter\Database\Forge->createTable('quizzes')
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\MigrationRunner.php(867): App\Database\Migrations\Quizzes->up()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-01-08 07:53:35 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near "ON"
+LINE 6:  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CU...
+                                                        ^ in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'CREATE TABLE "o...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('CREATE TABLE "o...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE "o...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE "o...')
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Database\Migrations\2025-01-08-072532_Options.php(36): CodeIgniter\Database\Forge->createTable('options')
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\MigrationRunner.php(867): App\Database\Migrations\Options->up()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
