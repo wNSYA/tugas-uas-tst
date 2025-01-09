@@ -53,12 +53,29 @@
         .logout:hover {
             background-color: #0056b3;
         }
+
+        .materi {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #ffc107;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .materi:hover {
+            background-color: #e0a800;
+        }
     </style>
 </head>
 <body>
     <h1>Dashboard</h1>
 
     <h2>Welcome, <?= esc(session()->get('user')['username'] ?? 'Guest') ?>!</h2>
+
+    <a href="/materi" class="materi">Materi</a>
 
     <div class="quiz-list">
         <h3>Kuis yang Tersedia:</h3>

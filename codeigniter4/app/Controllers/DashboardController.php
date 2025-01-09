@@ -34,6 +34,15 @@ class DashboardController extends Controller
         return view('dashboard', ['quizzes' => $quizzes, 'user' => $user]);
     }
 
+    public function materi(){
+        return view('materi');
+    }
+
+    public function materi1($materiId){
+        return view('materi1');
+    }
+
+
     public function logout()
     {
         // Destroy the session and redirect to home

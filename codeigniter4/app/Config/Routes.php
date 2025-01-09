@@ -35,6 +35,7 @@ $routes->get('quiz/list', 'QuizController::listQuiz');
 
 $routes->post('/quiz/answer', 'QuizController::answerQuiz');
 
-
+$routes->get('/materi', 'DashboardController::materi');
+$routes->get('/materi/(:num)', 'DashboardController::materi1/$1');
 // // API route for quiz
 // $routes->get('/api/quiz/(:num)', 'QuizController::getQuizById/$1');
