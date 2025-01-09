@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: DockerFile
+    container_name: mambo-quiz
+    depends_on:
+      - db
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html  # Mount your project directory inside the container
+    environment:
+      - CI_ENVIRONMENT=${CI_ENVIRONMENT}
+      - APP_BASE_URL=${APP_BASE_URL}  # Reference flat environment variable
+      - JWT_SECRET=${JWT_SECRET}  # Reference JWT_SECRET from .env
+      - DB_HOST=${DB_HOST}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD} 
+      - DB_DATABASE=${DB_DATABASE}
+      - DB_PORT=${DB_PORT} 
+    env_file:
+      - .env  # Load environment variables from .env file
+    networks:
+      - app_network
+
+  db:
+    image: postgres:17
+    container_name: db
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=${DB_USERNAME}      # From .env
+      - POSTGRES_PASSWORD=${DB_PASSWORD}  # From .env
+      - POSTGRES_DB=${DB_DATABASE}        # From .env
+      - POSTGRES_HOST=${DB_HOST}          # From .env
+      - POSTGRES_PORT=${DB_PORT}          # From .env
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    env_file:
+      - .env  # Load environment variables for the database service
+    networks:
+      - app_network
+      
+networks:
+  app_network:
+    driver: bridge
+volumes:
+  db-data:

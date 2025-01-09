@@ -88,3 +88,1232 @@ INFO - 2025-01-09 07:07:54 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2025-01-09 07:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-01-09 07:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-01-09 07:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-09 07:30:10 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432? in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'D:\\KULIAH\\Tahun...', 77)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(77): pg_connect('host=localhost ...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Database.php(72): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\Postgre\Connection))
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Commands\Database\CreateDatabase.php(136): CodeIgniter\Database\Config::forge()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\CreateDatabase->run(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:create', Array)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#11 {main}
+INFO - 2025-01-09 07:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-09 08:04:37 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (::1) and accepting
+	TCP/IP connections on port 5431?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (127.0.0.1) and accepting
+	TCP/IP connections on port 5431? in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'D:\\KULIAH\\Tahun...', 77)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(77): pg_connect('host=localhost ...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#15 {main}
+CRITICAL - 2025-01-09 08:04:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (::1) and accepting
+	TCP/IP connections on port 5431?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (127.0.0.1) and accepting
+	TCP/IP connections on port 5431?
+[Method: POST, Route: user/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+INFO - 2025-01-09 08:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 08:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 08:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 08:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-09 08:19:56 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (::1) and accepting
+	TCP/IP connections on port 5431?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (127.0.0.1) and accepting
+	TCP/IP connections on port 5431? in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'D:\\KULIAH\\Tahun...', 77)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(77): pg_connect('host=localhost ...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#15 {main}
+CRITICAL - 2025-01-09 08:19:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (::1) and accepting
+	TCP/IP connections on port 5431?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (127.0.0.1) and accepting
+	TCP/IP connections on port 5431?
+[Method: POST, Route: user/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+INFO - 2025-01-09 08:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-09 08:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-09 08:53:18 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (127.0.0.1) and accepting
+	TCP/IP connections on port 5432? in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'D:\\KULIAH\\Tahun...', 77)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(77): pg_connect('host=localhost ...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(38): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-09 08:53:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 3 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\UserController.php(38): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-09 12:08:48 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (127.0.0.1) and accepting
+	TCP/IP connections on port 5432? in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'D:\\KULIAH\\Tahun...', 77)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(77): pg_connect('host=localhost ...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(38): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-09 12:08:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 3 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\UserController.php(38): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-09 12:10:05 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH/CodeIgniter.php on line 190.
+ 1 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH/Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-01-09 12:10:06 --> ErrorException: Uncaught Error: Class "Locale" not found in /var/www/html/system/I18n/TimeTrait.php:76
+Stack trace:
+#0 /var/www/html/system/I18n/TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 /var/www/html/system/HTTP/ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 /var/www/html/system/HTTP/ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 /var/www/html/system/Debug/ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/system/Debug/Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 /var/www/html/system/Boot.php(312): CodeIgniter\CodeIgniter->initialize()
+#1 /var/www/html/system/Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 /var/www/html/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH/I18n/TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-01-09 12:24:46 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH/CodeIgniter.php on line 190.
+ 1 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH/Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-01-09 12:24:46 --> ErrorException: Uncaught Error: Class "Locale" not found in /var/www/html/system/I18n/TimeTrait.php:76
+Stack trace:
+#0 /var/www/html/system/I18n/TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 /var/www/html/system/HTTP/ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 /var/www/html/system/HTTP/ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 /var/www/html/system/Debug/ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/system/Debug/Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 /var/www/html/system/Boot.php(312): CodeIgniter\CodeIgniter->initialize()
+#1 /var/www/html/system/Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 /var/www/html/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH/I18n/TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-01-09 12:25:07 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH/CodeIgniter.php on line 190.
+ 1 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH/Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-01-09 12:25:07 --> ErrorException: Uncaught Error: Class "Locale" not found in /var/www/html/system/I18n/TimeTrait.php:76
+Stack trace:
+#0 /var/www/html/system/I18n/TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 /var/www/html/system/HTTP/ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 /var/www/html/system/HTTP/ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 /var/www/html/system/Debug/ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/system/Debug/Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 /var/www/html/system/Boot.php(312): CodeIgniter\CodeIgniter->initialize()
+#1 /var/www/html/system/Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 /var/www/html/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH/I18n/TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-01-09 12:25:47 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH/CodeIgniter.php on line 190.
+ 1 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH/Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-01-09 12:25:47 --> ErrorException: Uncaught Error: Class "Locale" not found in /var/www/html/system/I18n/TimeTrait.php:76
+Stack trace:
+#0 /var/www/html/system/I18n/TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 /var/www/html/system/HTTP/ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 /var/www/html/system/HTTP/ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 /var/www/html/system/Debug/ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/system/Debug/Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 /var/www/html/system/Boot.php(312): CodeIgniter\CodeIgniter->initialize()
+#1 /var/www/html/system/Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 /var/www/html/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH/I18n/TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-01-09 12:26:22 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH/CodeIgniter.php on line 190.
+ 1 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH/Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-01-09 12:26:22 --> ErrorException: Uncaught Error: Class "Locale" not found in /var/www/html/system/I18n/TimeTrait.php:76
+Stack trace:
+#0 /var/www/html/system/I18n/TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 /var/www/html/system/HTTP/ResponseTrait.php(395): CodeIgniter\I18n\Time::now()
+#2 /var/www/html/system/HTTP/ResponseTrait.php(373): CodeIgniter\HTTP\Response->sendHeaders()
+#3 /var/www/html/system/Debug/ExceptionHandler.php(83): CodeIgniter\HTTP\Response->send()
+#4 /var/www/html/system/Debug/Exceptions.php(163): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 /var/www/html/system/Boot.php(312): CodeIgniter\CodeIgniter->initialize()
+#1 /var/www/html/system/Boot.php(101): CodeIgniter\Boot::initializeCodeIgniter()
+#2 /var/www/html/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH/I18n/TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-01-09 12:41:46 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+[Method: CLI, Route: migrate]
+in SYSTEMPATH/Database/Database.php on line 182.
+ 1 SYSTEMPATH/Database/Database.php(59): CodeIgniter\Database\Database->checkDbExtension('Postgre')
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Common.php(361): CodeIgniter\Database\Config::connect('default', true)
+ 4 SYSTEMPATH/Database/MigrationRunner.php(146): db_connect(null)
+ 5 SYSTEMPATH/Config/Services.php(421): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), null)
+ 6 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), null, false)
+ 7 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('migrations', [...])
+ 8 SYSTEMPATH/Config/Services.php(416): CodeIgniter\Config\BaseService::getSharedInstance('migrations', null, null)
+ 9 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::migrations()
+10 SYSTEMPATH/Config/BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('migrations', [])
+11 SYSTEMPATH/Common.php(998): CodeIgniter\Config\BaseService::get('migrations')
+12 SYSTEMPATH/Commands/Database/Migrate.php(70): service('migrations')
+13 SYSTEMPATH/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run([...])
+14 SYSTEMPATH/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', [...])
+15 SYSTEMPATH/Boot.php(351): CodeIgniter\CLI\Console->run()
+16 SYSTEMPATH/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+17 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2025-01-09 12:41:58 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (127.0.0.1) and accepting
+	TCP/IP connections on port 5432? in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'D:\\KULIAH\\Tahun...', 77)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(77): pg_connect('host=localhost ...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(38): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-09 12:41:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host &quot;localhost&quot; (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 3 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\UserController.php(38): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-09 12:42:45 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+[Method: CLI, Route: migrate]
+in SYSTEMPATH/Database/Database.php on line 182.
+ 1 SYSTEMPATH/Database/Database.php(59): CodeIgniter\Database\Database->checkDbExtension('Postgre')
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Common.php(361): CodeIgniter\Database\Config::connect('default', true)
+ 4 SYSTEMPATH/Database/MigrationRunner.php(146): db_connect(null)
+ 5 SYSTEMPATH/Config/Services.php(421): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), null)
+ 6 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), null, false)
+ 7 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('migrations', [...])
+ 8 SYSTEMPATH/Config/Services.php(416): CodeIgniter\Config\BaseService::getSharedInstance('migrations', null, null)
+ 9 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::migrations()
+10 SYSTEMPATH/Config/BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('migrations', [])
+11 SYSTEMPATH/Common.php(998): CodeIgniter\Config\BaseService::get('migrations')
+12 SYSTEMPATH/Commands/Database/Migrate.php(70): service('migrations')
+13 SYSTEMPATH/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run([...])
+14 SYSTEMPATH/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', [...])
+15 SYSTEMPATH/Boot.php(351): CodeIgniter\CLI\Console->run()
+16 SYSTEMPATH/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+17 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-01-09 12:42:57 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+[Method: CLI, Route: migrate]
+in SYSTEMPATH/Database/Database.php on line 182.
+ 1 SYSTEMPATH/Database/Database.php(59): CodeIgniter\Database\Database->checkDbExtension('Postgre')
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Common.php(361): CodeIgniter\Database\Config::connect('default', true)
+ 4 SYSTEMPATH/Database/MigrationRunner.php(146): db_connect(null)
+ 5 SYSTEMPATH/Config/Services.php(421): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), null)
+ 6 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), null, false)
+ 7 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('migrations', [...])
+ 8 SYSTEMPATH/Config/Services.php(416): CodeIgniter\Config\BaseService::getSharedInstance('migrations', null, null)
+ 9 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::migrations()
+10 SYSTEMPATH/Config/BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('migrations', [])
+11 SYSTEMPATH/Common.php(998): CodeIgniter\Config\BaseService::get('migrations')
+12 SYSTEMPATH/Commands/Database/Migrate.php(70): service('migrations')
+13 SYSTEMPATH/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run([...])
+14 SYSTEMPATH/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', [...])
+15 SYSTEMPATH/Boot.php(351): CodeIgniter\CLI\Console->run()
+16 SYSTEMPATH/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+17 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-01-09 12:49:04 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+[Method: CLI, Route: migrate]
+in SYSTEMPATH/Database/Database.php on line 182.
+ 1 SYSTEMPATH/Database/Database.php(59): CodeIgniter\Database\Database->checkDbExtension('Postgre')
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Common.php(361): CodeIgniter\Database\Config::connect('default', true)
+ 4 SYSTEMPATH/Database/MigrationRunner.php(146): db_connect(null)
+ 5 SYSTEMPATH/Config/Services.php(421): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), null)
+ 6 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), null, false)
+ 7 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('migrations', [...])
+ 8 SYSTEMPATH/Config/Services.php(416): CodeIgniter\Config\BaseService::getSharedInstance('migrations', null, null)
+ 9 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::migrations()
+10 SYSTEMPATH/Config/BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('migrations', [])
+11 SYSTEMPATH/Common.php(998): CodeIgniter\Config\BaseService::get('migrations')
+12 SYSTEMPATH/Commands/Database/Migrate.php(70): service('migrations')
+13 SYSTEMPATH/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run([...])
+14 SYSTEMPATH/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', [...])
+15 SYSTEMPATH/Boot.php(351): CodeIgniter\CLI\Console->run()
+16 SYSTEMPATH/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+17 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2025-01-09 12:49:13 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 1: INSERT INTO &quot;users&quot; (&quot;username&quot;, &quot;email&quot;, &quot;password&quot;, &quot;role&quot;...
+                    ^ in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(38): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-09 12:49:13 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 1: INSERT INTO &quot;users&quot; (&quot;username&quot;, &quot;email&quot;, &quot;password&quot;, &quot;role&quot;...
+                    ^
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\UserController.php(38): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-09 12:49:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 1: INSERT INTO &quot;users&quot; (&quot;username&quot;, &quot;email&quot;, &quot;password&quot;, &quot;role&quot;...
+                    ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mamboyusting\', \'mamboyusting@example.com\', \'$2y$10$V0SWd6RxgWdK6pbpxLtmOevp231Z7MMP3JEe7.RBKU65yI4kZLmtC\', \'User\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mamboyusting\', \'mamboyusting@example.com\', \'$2y$10$V0SWd6RxgWdK6pbpxLtmOevp231Z7MMP3JEe7.RBKU65yI4kZLmtC\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\UserController.php(38): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-09 12:49:13 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 1: INSERT INTO &quot;users&quot; (&quot;username&quot;, &quot;email&quot;, &quot;password&quot;, &quot;role&quot;...
+                    ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 1: INSERT INTO &quot;users&quot; (&quot;username&quot;, &quot;email&quot;, &quot;password&quot;, &quot;role&quot;...
+                    ^', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mamboyusting\', \'mamboyusting@example.com\', \'$2y$10$V0SWd6RxgWdK6pbpxLtmOevp231Z7MMP3JEe7.RBKU65yI4kZLmtC\', \'User\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mamboyusting\', \'mamboyusting@example.com\', \'$2y$10$V0SWd6RxgWdK6pbpxLtmOevp231Z7MMP3JEe7.RBKU65yI4kZLmtC\', \'User\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "users" ("username", "email", "password", "role") VALUES (\'mamboyusting\', \'mamboyusting@example.com\', \'$2y$10$V0SWd6RxgWdK6pbpxLtmOevp231Z7MMP3JEe7.RBKU65yI4kZLmtC\', \'User\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 6 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 9 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+10 APPPATH\Controllers\UserController.php(38): CodeIgniter\BaseModel->save([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-09 12:49:34 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^ in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\KULIAH\\Tahun...', 204)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#15 {main}
+CRITICAL - 2025-01-09 12:49:34 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^
+[Method: POST, Route: user/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-09 12:49:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 209.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "users"
+WHERE "email" = \'mambonael@example.com\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "users"
+WHERE "email" = \'mambonael@example.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-09 12:49:34 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 204.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^', 'D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\system\\Database\\Postgre\\Connection.php', 204)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(204): pg_query(Object(PgSql\Connection), 'SELECT *
+FROM "users"
+WHERE "email" = \'mambonael@example.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "users"
+WHERE "email" = \'mambonael@example.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "users"
+WHERE "email" = \'mambonael@example.com\'
+ LIMIT 1')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 8 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-09 12:58:02 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+[Method: CLI, Route: migrate]
+in SYSTEMPATH/Database/Database.php on line 182.
+ 1 SYSTEMPATH/Database/Database.php(59): CodeIgniter\Database\Database->checkDbExtension('Postgre')
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Common.php(361): CodeIgniter\Database\Config::connect('default', true)
+ 4 SYSTEMPATH/Database/MigrationRunner.php(146): db_connect(null)
+ 5 SYSTEMPATH/Config/Services.php(421): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), null)
+ 6 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), null, false)
+ 7 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('migrations', [...])
+ 8 SYSTEMPATH/Config/Services.php(416): CodeIgniter\Config\BaseService::getSharedInstance('migrations', null, null)
+ 9 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::migrations()
+10 SYSTEMPATH/Config/BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('migrations', [])
+11 SYSTEMPATH/Common.php(998): CodeIgniter\Config\BaseService::get('migrations')
+12 SYSTEMPATH/Commands/Database/Migrate.php(70): service('migrations')
+13 SYSTEMPATH/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run([...])
+14 SYSTEMPATH/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', [...])
+15 SYSTEMPATH/Boot.php(351): CodeIgniter\CLI\Console->run()
+16 SYSTEMPATH/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+17 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2025-01-09 12:58:29 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  database &quot;mambo-database&quot; does not exist in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'D:\\KULIAH\\Tahun...', 77)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(77): pg_connect('host=localhost ...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#15 {main}
+CRITICAL - 2025-01-09 12:58:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  database &quot;mambo-database&quot; does not exist
+[Method: POST, Route: user/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+CRITICAL - 2025-01-09 13:08:41 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "pgsql" is not loaded. Install and enable it to use "Postgre" driver.
+[Method: CLI, Route: migrate]
+in SYSTEMPATH/Database/Database.php on line 182.
+ 1 SYSTEMPATH/Database/Database.php(59): CodeIgniter\Database\Database->checkDbExtension('Postgre')
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Common.php(361): CodeIgniter\Database\Config::connect('default', true)
+ 4 SYSTEMPATH/Database/MigrationRunner.php(146): db_connect(null)
+ 5 SYSTEMPATH/Config/Services.php(421): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), null)
+ 6 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), null, false)
+ 7 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('migrations', [...])
+ 8 SYSTEMPATH/Config/Services.php(416): CodeIgniter\Config\BaseService::getSharedInstance('migrations', null, null)
+ 9 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::migrations()
+10 SYSTEMPATH/Config/BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('migrations', [])
+11 SYSTEMPATH/Common.php(998): CodeIgniter\Config\BaseService::get('migrations')
+12 SYSTEMPATH/Commands/Database/Migrate.php(70): service('migrations')
+13 SYSTEMPATH/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run([])
+14 SYSTEMPATH/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', [])
+15 SYSTEMPATH/Boot.php(351): CodeIgniter\CLI\Console->run()
+16 SYSTEMPATH/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+17 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2025-01-09 13:20:12 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /var/www/html/system/Database/Postgre/Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/var/www/html/s...', 77)
+#1 /var/www/html/system/Database/Postgre/Connection.php(77): pg_connect('host=localhost ...')
+#2 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SELECT "table_n...')
+#5 /var/www/html/system/Database/BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#7 /var/www/html/system/Database/MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#8 /var/www/html/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 /var/www/html/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 /var/www/html/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 /var/www/html/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#12 /var/www/html/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 /var/www/html/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-01-09 13:28:14 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'D:\\KULIAH\\Tahun...', 77)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(77): pg_connect('host=db port=54...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#15 {main}
+CRITICAL - 2025-01-09 13:28:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host
+[Method: POST, Route: user/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+INFO - 2025-01-09 13:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-01-09 13:29:13 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'D:\\KULIAH\\Tahun...', 77)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(77): pg_connect('host=db port=54...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#15 {main}
+CRITICAL - 2025-01-09 13:29:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host
+[Method: POST, Route: user/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-09 13:42:12 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'D:\\KULIAH\\Tahun...', 77)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(77): pg_connect('host=db port=54...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#15 {main}
+CRITICAL - 2025-01-09 13:42:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host
+[Method: POST, Route: user/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-09 13:50:56 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint "users_username_key"
+DETAIL:  Key (username)=(mambo) already exists. in /var/www/html/system/Database/Postgre/Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 204)
+#1 /var/www/html/system/Database/Postgre/Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 /var/www/html/system/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 /var/www/html/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 /var/www/html/system/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 /var/www/html/app/Database/Seeds/Users.php(69): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 /var/www/html/system/Database/Seeder.php(147): App\Database\Seeds\Users->run()
+#7 /var/www/html/app/Database/Seeds/DatabaseSeeder.php(12): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 /var/www/html/system/Database/Seeder.php(147): App\Database\Seeds\DatabaseSeeder->run()
+#9 /var/www/html/system/Commands/Database/Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#10 /var/www/html/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Seed->run(Array)
+#11 /var/www/html/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#12 /var/www/html/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#13 /var/www/html/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 /var/www/html/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+ERROR - 2025-01-09 13:52:45 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'D:\\KULIAH\\Tahun...', 77)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(77): pg_connect('host=db port=54...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#15 {main}
+CRITICAL - 2025-01-09 13:52:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host
+[Method: POST, Route: user/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-09 14:00:22 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at "172.18.0.2", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /var/www/html/system/Database/Postgre/Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/var/www/html/s...', 77)
+#1 /var/www/html/system/Database/Postgre/Connection.php(77): pg_connect('host=172.18.0.2...')
+#2 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SELECT "table_n...')
+#5 /var/www/html/system/Database/BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#7 /var/www/html/system/Database/MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#8 /var/www/html/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 /var/www/html/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 /var/www/html/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 /var/www/html/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#12 /var/www/html/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 /var/www/html/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-01-09 14:08:51 --> ErrorException: pg_query(): Query failed: ERROR:  database "DatabaseSeeder" already exists in /var/www/html/system/Database/Postgre/Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 204)
+#1 /var/www/html/system/Database/Postgre/Connection.php(204): pg_query(Object(PgSql\Connection), 'CREATE DATABASE...')
+#2 /var/www/html/system/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('CREATE DATABASE...')
+#3 /var/www/html/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE DATABASE...')
+#4 /var/www/html/system/Database/Forge.php(232): CodeIgniter\Database\BaseConnection->query('CREATE DATABASE...')
+#5 /var/www/html/system/Commands/Database/CreateDatabase.php(136): CodeIgniter\Database\Forge->createDatabase('DatabaseSeeder')
+#6 /var/www/html/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\CreateDatabase->run(Array)
+#7 /var/www/html/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('db:create', Array)
+#8 /var/www/html/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#9 /var/www/html/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#10 /var/www/html/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-01-09 14:14:02 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'D:\\KULIAH\\Tahun...', 77)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(77): pg_connect('host=db port=54...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#15 {main}
+CRITICAL - 2025-01-09 14:14:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host
+[Method: POST, Route: user/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-09 14:50:45 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'D:\\KULIAH\\Tahun...', 77)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(77): pg_connect('host=db port=54...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#15 {main}
+CRITICAL - 2025-01-09 14:50:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host
+[Method: POST, Route: user/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-09 14:58:33 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'D:\\KULIAH\\Tahun...', 77)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(77): pg_connect('host=db port=54...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#15 {main}
+CRITICAL - 2025-01-09 14:58:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host
+[Method: POST, Route: user/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\UserController.php(83): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->loginAttempt()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-09 15:00:46 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'D:\\KULIAH\\Tahun...', 77)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(77): pg_connect('host=db port=54...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(38): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-09 15:00:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 3 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\UserController.php(38): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-09 15:21:19 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host in D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'D:\\KULIAH\\Tahun...', 77)
+#1 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\Postgre\Connection.php(77): pg_connect('host=db port=54...')
+#2 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#7 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#8 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#9 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\app\Controllers\UserController.php(38): CodeIgniter\BaseModel->save(Array)
+#10 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(933): App\Controllers\UserController->save()
+#11 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#14 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 D:\KULIAH\Tahun-3\Semester-5\Teknologi-Sistem-Terintegrasi\tubes\tugas-uas-tst\codeigniter4\system\rewrite.php(44): require_once('D:\\KULIAH\\Tahun...')
+#17 {main}
+CRITICAL - 2025-01-09 15:21:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name &quot;db&quot; to address: Unknown host
+[Method: POST, Route: user/register]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("username", "email", "password", "role") VALUES (:username:, :email:, :password:, :role:)', [...], false)
+ 3 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\UserController.php(38): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\KULIAH\\Tahun-3\\Semester-5\\Teknologi-Sistem-Terintegrasi\\tubes\\tugas-uas-tst\\codeigniter4\\public\\index.php')
+ERROR - 2025-01-09 15:32:54 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not translate host name "titit" to address: Name or service not known in /var/www/html/system/Database/Postgre/Connection.php:77
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/var/www/html/s...', 77)
+#1 /var/www/html/system/Database/Postgre/Connection.php(77): pg_connect('host=titit port...')
+#2 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SELECT "table_n...')
+#5 /var/www/html/system/Database/BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#6 /var/www/html/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#7 /var/www/html/system/Database/MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#8 /var/www/html/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 /var/www/html/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 /var/www/html/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 /var/www/html/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#12 /var/www/html/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 /var/www/html/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-01-09 15:37:01 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "mysqli" is not loaded. Install and enable it to use "MySQLi" driver.
+[Method: CLI, Route: migrate]
+in SYSTEMPATH/Database/Database.php on line 182.
+ 1 SYSTEMPATH/Database/Database.php(59): CodeIgniter\Database\Database->checkDbExtension('MySQLi')
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Common.php(361): CodeIgniter\Database\Config::connect('default', true)
+ 4 SYSTEMPATH/Database/MigrationRunner.php(146): db_connect(null)
+ 5 SYSTEMPATH/Config/Services.php(421): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), null)
+ 6 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), null, false)
+ 7 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('migrations', [...])
+ 8 SYSTEMPATH/Config/Services.php(416): CodeIgniter\Config\BaseService::getSharedInstance('migrations', null, null)
+ 9 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::migrations()
+10 SYSTEMPATH/Config/BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('migrations', [])
+11 SYSTEMPATH/Common.php(998): CodeIgniter\Config\BaseService::get('migrations')
+12 SYSTEMPATH/Commands/Database/Migrate.php(70): service('migrations')
+13 SYSTEMPATH/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run([])
+14 SYSTEMPATH/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', [])
+15 SYSTEMPATH/Boot.php(351): CodeIgniter\CLI\Console->run()
+16 SYSTEMPATH/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+17 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-01-09 15:40:25 --> InvalidArgumentException: You have not selected a database type to connect to.
+[Method: CLI, Route: migrate]
+in SYSTEMPATH/Database/Database.php on line 56.
+ 1 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH/Common.php(361): CodeIgniter\Database\Config::connect('default', true)
+ 3 SYSTEMPATH/Database/MigrationRunner.php(146): db_connect(null)
+ 4 SYSTEMPATH/Config/Services.php(421): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), null)
+ 5 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), null, false)
+ 6 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('migrations', [...])
+ 7 SYSTEMPATH/Config/Services.php(416): CodeIgniter\Config\BaseService::getSharedInstance('migrations', null, null)
+ 8 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::migrations()
+ 9 SYSTEMPATH/Config/BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('migrations', [])
+10 SYSTEMPATH/Common.php(998): CodeIgniter\Config\BaseService::get('migrations')
+11 SYSTEMPATH/Commands/Database/Migrate.php(70): service('migrations')
+12 SYSTEMPATH/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run([])
+13 SYSTEMPATH/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', [])
+14 SYSTEMPATH/Boot.php(351): CodeIgniter\CLI\Console->run()
+15 SYSTEMPATH/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+16 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-01-09 15:43:43 --> InvalidArgumentException: You have not selected a database type to connect to.
+[Method: CLI, Route: migrate]
+in SYSTEMPATH/Database/Database.php on line 56.
+ 1 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH/Common.php(361): CodeIgniter\Database\Config::connect('default', true)
+ 3 SYSTEMPATH/Database/MigrationRunner.php(146): db_connect(null)
+ 4 SYSTEMPATH/Config/Services.php(421): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), null)
+ 5 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), null, false)
+ 6 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('migrations', [...])
+ 7 SYSTEMPATH/Config/Services.php(416): CodeIgniter\Config\BaseService::getSharedInstance('migrations', null, null)
+ 8 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::migrations()
+ 9 SYSTEMPATH/Config/BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('migrations', [])
+10 SYSTEMPATH/Common.php(998): CodeIgniter\Config\BaseService::get('migrations')
+11 SYSTEMPATH/Commands/Database/Migrate.php(70): service('migrations')
+12 SYSTEMPATH/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run([])
+13 SYSTEMPATH/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', [])
+14 SYSTEMPATH/Boot.php(351): CodeIgniter\CLI\Console->run()
+15 SYSTEMPATH/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+16 ROOTPATH/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2025-01-09 16:05:13 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in /var/www/html/system/Database/Postgre/Connection.php:97
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SELECT "table_n...')
+#3 /var/www/html/system/Database/BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#4 /var/www/html/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /var/www/html/system/Database/MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /var/www/html/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /var/www/html/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /var/www/html/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /var/www/html/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#10 /var/www/html/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 /var/www/html/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+INFO - 2025-01-09 16:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
