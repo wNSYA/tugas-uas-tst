@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1736405391;error|s:25:"Email or password missing";__ci_vars|a:2:{s:5:"error";s:3:"old";s:13:"_ci_old_input";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:0:{}}user|a:3:{s:2:"id";s:1:"8";s:8:"username";s:9:"mambonael";s:4:"role";s:5:"Admin";}isLoggedIn|b:1;

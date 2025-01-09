@@ -7,35 +7,36 @@ use CodeIgniter\Controller;
 
 class DashboardController extends Controller
 {
-    private function validateToken()
-{
-    $token = getBearerToken();
-    if (!$token) {
-        return $this->response->setStatusCode(401)->setJSON(['error' => 'Token not provided']);
+    private function checkSession()
+    {
+        // Check if the user is logged in via session
+        if (!session()->get('isLoggedIn')) {
+            return redirect()->to('/')->with('error', 'You need to log in first.');
+        }
+
+        // Return user data from the session
+        return session()->get('user');
     }
 
-    $decoded = validateJWT($token, env('JWT_SECRET'));
-    if (!$decoded) {
-        return $this->response->setStatusCode(401)->setJSON(['error' => 'Invalid token']);
-    }
-
-    return $decoded; // Return decoded token for further use
-}
     public function index()
     {
-        $decoded = $this->validateToken();
-        if (!$decoded) return;
-    
+        // Validate session
+        $user = $this->checkSession();
+        if ($user instanceof \CodeIgniter\HTTP\RedirectResponse) {
+            return $user; // Redirect if the session is invalid
+        }
+
+        // Fetch quizzes from the database
         $quizModel = new QuizModel();
         $quizzes = $quizModel->findAll();
-    
-        return view('dashboard', ['quizzes' => $quizzes, 'user' => $decoded]);
+
+        // Pass data to the view
+        return view('dashboard', ['quizzes' => $quizzes, 'user' => $user]);
     }
-    
 
     public function logout()
     {
-        // Hapus data session
+        // Destroy the session and redirect to home
         session()->destroy();
         return redirect()->to('/');
     }

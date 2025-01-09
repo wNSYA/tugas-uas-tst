@@ -103,76 +103,76 @@ class QuizController extends ResourceController
         return $this->response->setStatusCode(404)->setJSON(['error' => 'Quiz not found']);
     }
 
-    // public function startQuiz($quizId)
-    // {
-    //     $quizModel = new QuizModel();
-    //     $questionModel = new QuestionModel();
-    //     $optionModel = new OptionModel();
+    public function startQuiz($quizId)
+    {
+        $quizModel = new QuizModel();
+        $questionModel = new QuestionModel();
+        $optionModel = new OptionModel();
     
-    //     // Fetch the quiz data
-    //     $quiz = $quizModel->find($quizId);
-    //     if (!$quiz) {
-    //         throw new \CodeIgniter\Exceptions\PageNotFoundException('Quiz not found');
-    //     }
+        // Fetch the quiz data
+        $quiz = $quizModel->find($quizId);
+        if (!$quiz) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Quiz not found');
+        }
     
-    //     // Fetch the related questions and options for the quiz
-    //     $questions = $questionModel->where('quiz_id', $quizId)->findAll();
-    //     foreach ($questions as &$question) {
-    //         $question['options'] = $optionModel->where('question_id', $question['id'])->findAll();
-    //     }
+        // Fetch the related questions and options for the quiz
+        $questions = $questionModel->where('quiz_id', $quizId)->findAll();
+        foreach ($questions as &$question) {
+            $question['options'] = $optionModel->where('question_id', $question['id'])->findAll();
+        }
     
-    //     return view('quiz/start', [
-    //         'quiz' => $quiz,
-    //         'questions' => $questions,
-    //     ]);
-    // }
+        return view('quiz/start', [
+            'quiz' => $quiz,
+            'questions' => $questions,
+        ]);
+    }
 
 
-    // public function submitQuiz()
-    // {
-    //     $quizId = $this->request->getPost('quiz_id');
-    //     $userId = session()->get('user_id'); // Get the logged-in user ID
-    //     $answers = $this->request->getPost('answers'); // Answers from the form
+    public function submitQuiz()
+    {
+        $quizId = $this->request->getPost('quiz_id');
+        $userId = session()->get('user_id'); // Get the logged-in user ID
+        $answers = $this->request->getPost('answers'); // Answers from the form
     
-    //     if (empty($answers) || empty($quizId)) {
-    //         return redirect()->to('/dashboard')->with('error', 'No answers provided or invalid quiz');
-    //     }
+        if (empty($answers) || empty($quizId)) {
+            return redirect()->to('/dashboard')->with('error', 'No answers provided or invalid quiz');
+        }
     
-    //     // Fetch quiz and questions
-    //     $quizModel = new QuizModel();
-    //     $questionModel = new QuestionModel();
-    //     $optionModel = new OptionModel();
+        // Fetch quiz and questions
+        $quizModel = new QuizModel();
+        $questionModel = new QuestionModel();
+        $optionModel = new OptionModel();
     
-    //     // Calculate score
-    //     $score = 0;
-    //     $correctAnswers = [];
+        // Calculate score
+        $score = 0;
+        $correctAnswers = [];
     
-    //     foreach ($answers as $questionId => $selectedOptionId) {
-    //         $question = $questionModel->find($questionId);
-    //         $correctOption = $optionModel->where('question_id', $questionId)
-    //                                      ->where('is_correct', true)
-    //                                      ->first();
+        foreach ($answers as $questionId => $selectedOptionId) {
+            $question = $questionModel->find($questionId);
+            $correctOption = $optionModel->where('question_id', $questionId)
+                                         ->where('is_correct', true)
+                                         ->first();
     
-    //         // Check if the answer is correct
-    //         if ($selectedOptionId == $correctOption['id']) {
-    //             $score++;
-    //         }
+            // Check if the answer is correct
+            if ($selectedOptionId == $correctOption['id']) {
+                $score++;
+            }
     
-    //         // Collect answers for showing result
-    //         $correctAnswers[$questionId] = [
-    //             'selected_option_id' => $selectedOptionId,
-    //             'correct_option_id' => $correctOption['id'],
-    //         ];
-    //     }
+            // Collect answers for showing result
+            $correctAnswers[$questionId] = [
+                'selected_option_id' => $selectedOptionId,
+                'correct_option_id' => $correctOption['id'],
+            ];
+        }
     
-    //     // Return a result view showing the score and answers
-    //     return view('quiz/quiz_result', [
-    //         'score' => $score,
-    //         'totalQuestions' => count($answers),
-    //         'quizTitle' => $quizModel->find($quizId)['title'],
-    //         'correctAnswers' => $correctAnswers,
-    //     ]);
-    // }
+        // Return a result view showing the score and answers
+        return view('quiz/quiz_result', [
+            'score' => $score,
+            'totalQuestions' => count($answers),
+            'quizTitle' => $quizModel->find($quizId)['title'],
+            'correctAnswers' => $correctAnswers,
+        ]);
+    }
     
     public function answerQuiz()
     {

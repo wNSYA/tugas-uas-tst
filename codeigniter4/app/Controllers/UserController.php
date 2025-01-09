@@ -59,22 +59,58 @@ class UserController extends Controller
 
     public function loginAttempt()
     {
-        $data = $this->request->getJSON(true);
+        $isJsonRequest = $this->request->isAJAX() || $this->request->getHeaderLine('Content-Type') === 'application/json';
     
-        if (!isset($data['email'], $data['password'])) {
-            return $this->response->setStatusCode(400)->setJSON(['error' => 'Email or password missing']);
+        if ($isJsonRequest) {
+            // Handle JSON requests (API)
+            $data = $this->request->getJSON(true);
+        } else {
+            // Handle form submissions (view)
+            $data = $this->request->getPost();
         }
     
+        // Validate input
+        if (!isset($data['email'], $data['password'])) {
+            if ($isJsonRequest) {
+                return $this->response->setStatusCode(400)->setJSON(['error' => 'Email or password missing']);
+            } else {
+                return redirect()->back()->with('error', 'Email or password missing')->withInput();
+            }
+        }
+    
+        // Check user credentials
         $userModel = new UserModel();
         $user = $userModel->where('email', $data['email'])->first();
     
         if ($user && password_verify($data['password'], $user['password'])) {
-            $token = createJWT(['id' => $user['id'], 'role' => $user['role']], env('JWT_SECRET'));
-            return $this->response->setJSON(['message' => 'Login successful', 'token' => $token]);
+            // Set session data
+            session()->set([
+                'user' => [
+                    'id' => $user['id'],
+                    'username' => $user['username'],
+                    'role' => $user['role'],
+                ],
+                'isLoggedIn' => true,
+            ]);
+    
+            if ($isJsonRequest) {
+                // Respond with JSON for API
+                $token = createJWT(['id' => $user['id'], 'role' => $user['role']], env('JWT_SECRET'));
+                return $this->response->setJSON(['message' => 'Login successful', 'token' => $token]);
+            } else {
+                // Redirect to dashboard for views
+                return redirect()->to('/dashboard');
+            }
         } else {
-            return $this->response->setStatusCode(401)->setJSON(['error' => 'Invalid email or password']);
+            if ($isJsonRequest) {
+                return $this->response->setStatusCode(401)->setJSON(['error' => 'Invalid email or password']);
+            } else {
+                return redirect()->back()->with('error', 'Invalid email or password')->withInput();
+            }
         }
-    }    
+    }
+    
+      
     
     
     
