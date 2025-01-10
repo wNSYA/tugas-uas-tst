@@ -75,7 +75,7 @@ class QuizController extends ResourceController
                     foreach ($options as &$option) {
                         $option['option_text'] = [
                             'text' => $option['option_text'],
-                            'value' => $option['is_correct'] ? 't' : 'f'
+                            'value' => $option['is_correct']
                         ];
                         unset($option['is_correct']);
                     }
