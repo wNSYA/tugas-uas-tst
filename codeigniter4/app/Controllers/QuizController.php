@@ -179,11 +179,6 @@ class QuizController extends ResourceController
         $decoded = $this->validateToken();
         if (!$decoded) return;
 
-        // Validasi token
-        if ($decoded->role !== 'Admin') {
-            return $this->response->setStatusCode(403)->setJSON(['error' => 'Access denied']);
-        }
-
     
         // Ambil data JSON dari request body
         $data = $this->request->getJSON(true);
