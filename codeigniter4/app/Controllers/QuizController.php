@@ -63,12 +63,21 @@ class QuizController extends ResourceController
             $questions = $questionsQuery->get()->getResultArray();
     
             // Process each question and its options
-            foreach ($questions as &$question) {
+            foreach ($questions as $index => &$question) {
+                $questionId = $question['id']; // Store ID for query
+                $questionText = $question['question_text']; // Store question text
+                
+                // Create new question array with desired order
+                $question = [
+                    'sequence' => $index + 1,
+                    'question_text' => $questionText
+                ];
+    
                 // Select different fields based on token type
                 if ($decoded->role == 'Admin') {
                     $optionsQuery = $db->table('options')
                         ->select('option_text, is_correct')
-                        ->where('question_id', $question['id']);
+                        ->where('question_id', $questionId);
                     
                     // For admin: get options with their correct/incorrect status
                     $options = $optionsQuery->get()->getResultArray();
@@ -83,7 +92,7 @@ class QuizController extends ResourceController
                     // For regular users: just get option text
                     $optionsQuery = $db->table('options')
                         ->select('option_text')
-                        ->where('question_id', $question['id']);
+                        ->where('question_id', $questionId);
                     
                     $options = $optionsQuery->get()->getResultArray();
                 }
@@ -102,6 +111,7 @@ class QuizController extends ResourceController
     
         return $this->response->setStatusCode(404)->setJSON(['error' => 'Quiz not found']);
     }
+
 
     public function startQuiz($quizId)
     {
