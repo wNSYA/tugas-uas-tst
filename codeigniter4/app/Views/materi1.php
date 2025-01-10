@@ -1,15 +1,7 @@
 <?php
 // Decode the JSON string
-$json = '{
-    "status": 200,
-    "data": {
-        "name": "Aritmatika Sosial",
-        "description": "Topik ini mencakup penerapan konsep matematika dalam kehidupan sehari-hari, seperti perhitungan keuntungan, kerugian, diskon, bunga, dan pajak. Siswa akan mempelajari cara menyelesaikan masalah yang melibatkan bilangan bulat, pecahan, dan persentase untuk memahami konsep aritmatika sosial secara praktis.",
-        "video_link": "https://youtu.be/VQqEdbStxsM?si=0LohetNSZiPyd6tW"
-    }
-}';
 
-$data = json_decode($json, true);
+$data = json_decode($items, true);
 
 if ($data["status"] === 200) {
     $item = $data["data"];

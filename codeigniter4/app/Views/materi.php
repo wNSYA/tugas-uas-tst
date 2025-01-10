@@ -1,32 +1,6 @@
 <?php
 // Decode the JSON string
-$json = '{
-    "status": 200,
-    "data": [
-        {
-            "id": "1",
-            "name": "Aritmatika Sosial"
-        },
-        {
-            "id": "2",
-            "name": "Aljabar"
-        },
-        {
-            "id": "3",
-            "name": "Geometri"
-        },
-        {
-            "id": "4",
-            "name": "Statistika dan Probabilitas"
-        },
-        {
-            "id": "5",
-            "name": "Bilangan dan Pola"
-        }
-    ]
-}';
-
-$data = json_decode($json, true);
+$data = json_decode($items, true);
 
 if ($data["status"] === 200) {
     $items = $data["data"];

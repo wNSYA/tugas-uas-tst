@@ -1,0 +1,19 @@
+ERROR - 2025-01-10 03:21:38 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint "users_username_key"
+DETAIL:  Key (username)=(mambo) already exists. in /var/www/html/system/Database/Postgre/Connection.php:204
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 204)
+#1 /var/www/html/system/Database/Postgre/Connection.php(204): pg_query(Object(PgSql\Connection), 'INSERT INTO "us...')
+#2 /var/www/html/system/Database/BaseConnection.php(734): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "us...')
+#3 /var/www/html/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "us...')
+#4 /var/www/html/system/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#5 /var/www/html/app/Database/Seeds/Users.php(69): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 /var/www/html/system/Database/Seeder.php(147): App\Database\Seeds\Users->run()
+#7 /var/www/html/app/Database/Seeds/DatabaseSeeder.php(12): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 /var/www/html/system/Database/Seeder.php(147): App\Database\Seeds\DatabaseSeeder->run()
+#9 /var/www/html/system/Commands/Database/Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#10 /var/www/html/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Seed->run(Array)
+#11 /var/www/html/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#12 /var/www/html/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#13 /var/www/html/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 /var/www/html/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
